@@ -1,0 +1,69 @@
+/* CSS Document 
+
+Reds:
+#F42C33
+#D1262B
+#A81E23
+#571012
+
+Grays:
+#D9D9D9
+#BFBFBF
+#999999
+
+font-family: 'Quicksand', sans-serif;
+*/
+
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+body {
+  	background-image: url("../images/landscape.png");
+	background-position: center;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+nav {
+	transform: translateY(-200%);
+	transition-duration: .5s;
+	background-color: #571012;
+	padding: 2% 0;
+	width: 100%;
+}
+
+header {
+	position: fixed;
+	width: 100%;
+}
+
+header:hover nav {
+	transform: translateY(0);
+}
+
+nav li {
+	display: inline;
+	margin: 0 8%;
+}
+
+nav a {
+	text-decoration: none;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 1.2vw;
+	color: #999999;
+}
+
+nav a:hover {
+	color: white;
+}
+
+main {
+	outline: double .5vw #999999;
+	margin: 0 10%;
+	padding: 5% 1%;
+	height: 10000px;
+	background-color: #BFBFBF;
+}
