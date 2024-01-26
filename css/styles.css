@@ -11,8 +11,12 @@ Grays:
 #BFBFBF
 #999999
 
-font-family: 'Quicksand', sans-serif;
+links - font-family: 'Quicksand', sans-serif;
+headings - font-family: 'Comfortaa', sans-serif;
+main text - font-family: 'Tenor Sans', sans-serif;
 */
+
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Tenor+Sans&display=swap');
 
 * {
 	margin: 0;
@@ -21,17 +25,14 @@ font-family: 'Quicksand', sans-serif;
 }
 
 body {
-  	background-image: url("../images/landscape.png");
-	background-position: center;
-	background-attachment: fixed;
-	background-size: cover;
+  	background-color: #853D35;
 }
 
 nav {
-	transform: translateY(-200%);
-	transition-duration: .5s;
-	background-color: #571012;
-	padding: 2% 0;
+	transform: translateY(-90%);
+	transition-duration: .2s;
+	background-color: #521710;
+	padding: 1.5% 0;
 	width: 100%;
 }
 
@@ -46,13 +47,13 @@ header:hover nav {
 
 nav li {
 	display: inline;
-	margin: 0 8%;
+	margin: 0 7%;
 }
 
 nav a {
 	text-decoration: none;
 	font-family: 'Quicksand', sans-serif;
-	font-size: 1.2vw;
+	font-size: 1.1vw;
 	color: #999999;
 }
 
@@ -64,6 +65,61 @@ main {
 	outline: double .5vw #999999;
 	margin: 0 10%;
 	padding: 5% 1%;
-	height: 10000px;
-	background-color: #BFBFBF;
+	background-color: #E1E1E1;
+}
+
+main h1 {
+	font-family: 'Comfortaa', sans-serif;
+	font-size: 4vw;
+	padding: 2% 5%;
+	color: #272121;
+}
+
+#title {
+	color: #662929;
+	font-size: 5vw;
+	text-align: center;
+}
+
+main p {
+	font-family: 'Tenor Sans', sans-serif;
+	font-size: 2vw;
+	padding: 1% 5%;
+	text-indent: 5%;
+}
+
+main .end {
+	border-bottom: dotted .4vw #999999;
+	padding: 10%;
+}
+
+main img {
+	width: 50%;
+	margin: 5%;
+	outline: ridge .6vw #99403D;
+}
+
+.right {
+	float: right;
+}
+
+.left {
+	float: left;
+}
+
+.text_right {
+	text-align: right;
+}
+
+.text_left {
+	text-align: left;
+}
+
+footer {
+	text-align: center;
+	margin: 5%;
+}
+
+footer p {
+	margin-top: 1%;
 }
